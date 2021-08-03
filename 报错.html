@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>内训宝-中油瑞飞2021-7-6遇到的错误 | 音神的博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="音神的技术博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.7cfabf05.css" as="style"><link rel="preload" href="/assets/js/app.823cdb10.js" as="script"><link rel="preload" href="/assets/js/2.7e250be9.js" as="script"><link rel="preload" href="/assets/js/15.f11a9999.js" as="script"><link rel="prefetch" href="/assets/js/10.d8d5a19d.js"><link rel="prefetch" href="/assets/js/11.c5cbdd5d.js"><link rel="prefetch" href="/assets/js/12.faba2b4f.js"><link rel="prefetch" href="/assets/js/13.de0eb6b5.js"><link rel="prefetch" href="/assets/js/14.3a77ae85.js"><link rel="prefetch" href="/assets/js/16.472184a2.js"><link rel="prefetch" href="/assets/js/3.d20c8fbe.js"><link rel="prefetch" href="/assets/js/4.f461ebef.js"><link rel="prefetch" href="/assets/js/5.eae3f1ee.js"><link rel="prefetch" href="/assets/js/6.82a11e63.js"><link rel="prefetch" href="/assets/js/7.a72930fd.js"><link rel="prefetch" href="/assets/js/8.333253e0.js"><link rel="prefetch" href="/assets/js/9.7a20fc6b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7cfabf05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="音神的博客" class="logo"> <span class="site-name can-hide">音神的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/Git.html" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/Java.html" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/JavaWeb.html" class="nav-link">
+  JavaWeb
+</a></div><div class="nav-item"><a href="/MySQL.html" class="nav-link">
+  MySQL
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/Git.html" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/Java.html" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/JavaWeb.html" class="nav-link">
+  JavaWeb
+</a></div><div class="nav-item"><a href="/MySQL.html" class="nav-link">
+  MySQL
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>内训宝-中油瑞飞2021-7-6遇到的错误</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="内训宝-中油瑞飞2021-7-6遇到的错误"><a href="#内训宝-中油瑞飞2021-7-6遇到的错误" class="header-anchor">#</a> 内训宝-中油瑞飞2021-7-6遇到的错误</h1> <div class="language- extra-class"><pre class="language-text"><code>org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.reflect.UndeclaredThrowableException
+### The error may exist in file [/data/htdocs/test/WEB-INF/classes/mybatis/edu/company/CompanyMapper.xml]
+### The error may involve com.neixunbao.platform.edu.dao.company.CompanyDao.getCompanyListByConditionPage-Inline
+### The error occurred while setting parameters
+### SQL: SELECT            edu_company_manager.id,         edu_company_manager.name,         edu_company_manager.logo,         edu_company_manager.culture,         edu_company_manager.address,         edu_company_manager.domainName,         edu_company_manager.status,         edu_company_manager.createTime,         edu_company_manager.updateTime,         edu_company_manager.begin_time,         edu_company_manager.end_time,         edu_company_manager.limit_user_count,         edu_company_manager.limit_online_user_count,         edu_company_manager.department_manager_switch               FROM         edu_company_manager          WHERE edu_company_manager.id != 1 AND edu_company_manager.status != 2          order by edu_company_manager.createTime desc limit ?
+### Cause: java.lang.reflect.UndeclaredThrowableException
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:77) ~[mybatis-spring-1.3.3.jar:1.3.3]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446) ~[mybatis-spring-1.3.3.jar:1.3.3]
+	at com.sun.proxy.$Proxy23.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:238) ~[mybatis-spring-1.3.3.jar:1.3.3]
+	at com.neixunbao.platform.common.dao.GenericSuperDaoImpl.queryForListPage(GenericSuperDaoImpl.java:84) ~[nxb-zyrf-3.1.jar:na]
+	at com.neixunbao.platform.edu.service.company.CompanyService.getCompanyListByConditionPage(CompanyService.java:140) ~[nxb-zyrf-3.1.jar:na]
+	at com.neixunbao.platform.edu.service.company.CompanyService.getCompanyListFromMem(CompanyService.java:457) ~[nxb-zyrf-3.1.jar:na]
+	at com.neixunbao.platform.edu.service.company.CompanyService.getCompanyById(CompanyService.java:395) ~[nxb-zyrf-3.1.jar:na]
+	at com.neixunbao.platform.edu.service.company.CompanyService$$FastClassBySpringCGLIB$$8ee1a76b.invoke(&lt;generated&gt;) ~[nxb-zyrf-3.1.jar:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720) ~[spring-aop-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) ~[spring-tx-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655) ~[spring-aop-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at com.neixunbao.platform.edu.service.company.CompanyService$$EnhancerBySpringCGLIB$$ba3ecd0a.getCompanyById(&lt;generated&gt;) ~[nxb-zyrf-3.1.jar:na]
+	at com.neixunbao.platform.edu.controller.user.AdminUserController.userList(AdminUserController.java:1832) ~[nxb-zyrf-3.1.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_212]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_212]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_212]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_212]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222) [spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137) [spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [servlet-api.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845) [spring-webmvc-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.46]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129) [sitemesh-2.4.2.jar:na]
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77) [sitemesh-2.4.2.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.46]
+	at com.neixunbao.platform.common.intercepter.XssCodeFilter.doFilter(XssCodeFilter.java:37) [nxb-zyrf-3.1.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.46]
+	at com.neixunbao.platform.common.intercepter.ParamTrimFilter.doFilter(ParamTrimFilter.java:24) [nxb-zyrf-3.1.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.46]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.46]
+	at com.neixunbao.platform.common.intercepter.RunTimeFilter.doFilter(RunTimeFilter.java:24) [nxb-zyrf-3.1.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) [spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.4.RELEASE.jar:4.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [catalina.jar:8.5.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:528) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [catalina.jar:8.5.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [catalina.jar:8.5.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [catalina.jar:8.5.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798) [tomcat-coyote.jar:8.5.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:810) [tomcat-coyote.jar:8.5.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500) [tomcat-coyote.jar:8.5.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.46]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_212]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_212]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.46]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_212]
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.reflect.UndeclaredThrowableException
+### The error may exist in file [/data/htdocs/test/WEB-INF/classes/mybatis/edu/company/CompanyMapper.xml]
+### The error may involve com.neixunbao.platform.edu.dao.company.CompanyDao.getCompanyListByConditionPage-Inline
+### The error occurred while setting parameters
+### SQL: SELECT            edu_company_manager.id,         edu_company_manager.name,         edu_company_manager.logo,         edu_company_manager.culture,         edu_company_manager.address,         edu_company_manager.domainName,         edu_company_manager.status,         edu_company_manager.createTime,         edu_company_manager.updateTime,         edu_company_manager.begin_time,         edu_company_manager.end_time,         edu_company_manager.limit_user_count,         edu_company_manager.limit_online_user_count,         edu_company_manager.department_manager_switch               FROM         edu_company_manager          WHERE edu_company_manager.id != 1 AND edu_company_manager.status != 2          order by edu_company_manager.createTime desc limit ?
+### Cause: java.lang.reflect.UndeclaredThrowableException
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30) ~[mybatis-3.4.1.jar:3.4.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150) ~[mybatis-3.4.1.jar:3.4.1]
+	at sun.reflect.GeneratedMethodAccessor354.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_212]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_212]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-1.3.3.jar:1.3.3]
+	... 76 common frames omitted
+Caused by: java.lang.reflect.UndeclaredThrowableException: null
+	at com.sun.proxy.$Proxy207.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.1.jar:3.4.1]
+	... 80 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: java.sql.SQLException: Got error 28 from storage engine
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_212]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_212]
+	at com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor.intercept(OffsetLimitInterceptor.java:111) ~[mybatis-paginator-1.2.17.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.4.1.jar:3.4.1]
+	... 82 common frames omitted
+Caused by: java.sql.SQLException: Got error 28 from storage engine
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2501) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1966) ~[mysql-connector-java-5.1.41.jar:5.1.41]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2712) ~[druid-1.0.1.jar:1.0.1]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_executeQuery(FilterEventAdapter.java:465) ~[druid-1.0.1.jar:1.0.1]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_executeQuery(FilterChainImpl.java:2709) ~[druid-1.0.1.jar:1.0.1]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.executeQuery(PreparedStatementProxyImpl.java:132) ~[druid-1.0.1.jar:1.0.1]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227) ~[druid-1.0.1.jar:1.0.1]
+	at com.github.miemiedev.mybatis.paginator.support.SQLHelp.getCount(SQLHelp.java:61) ~[mybatis-paginator-1.2.17.jar:na]
+	at com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor$2.call(OffsetLimitInterceptor.java:105) ~[mybatis-paginator-1.2.17.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_212]
+	at com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor.call(OffsetLimitInterceptor.java:122) ~[mybatis-paginator-1.2.17.jar:na]
+	at com.github.miemiedev.mybatis.paginator.OffsetLimitInterceptor.intercept(OffsetLimitInterceptor.java:110) ~[mybatis-paginator-1.2.17.jar:na]
+	... 83 common frames omitted
+</code></pre></div><h1 id="_2021-7-22日springboot上传文件报错"><a href="#_2021-7-22日springboot上传文件报错" class="header-anchor">#</a> 2021-7-22日SpringBoot上传文件报错：</h1> <p>Spring Boot:The field file exceeds its maximum permitted size of 1048576 bytes.</p> <p>https://blog.csdn.net/u010429286/article/details/54381705</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.823cdb10.js" defer></script><script src="/assets/js/2.7e250be9.js" defer></script><script src="/assets/js/15.f11a9999.js" defer></script>
+  </body>
+</html>
