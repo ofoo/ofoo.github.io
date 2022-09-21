@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hutool 工具包使用指南 | 李飒飒</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script src="/assets/js/lisasa.js"></script>
+    <meta name="description" content="李飒飒的学习文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.334c6177.js" as="script"><link rel="preload" href="/assets/js/2.9c506eb8.js" as="script"><link rel="preload" href="/assets/js/12.99d6708b.js" as="script"><link rel="prefetch" href="/assets/js/10.0f8b314a.js"><link rel="prefetch" href="/assets/js/11.fc0bda41.js"><link rel="prefetch" href="/assets/js/13.8600d51d.js"><link rel="prefetch" href="/assets/js/14.5caf2a0b.js"><link rel="prefetch" href="/assets/js/15.bf9debef.js"><link rel="prefetch" href="/assets/js/16.21aef9f1.js"><link rel="prefetch" href="/assets/js/17.f5a0aa2c.js"><link rel="prefetch" href="/assets/js/18.199c42dd.js"><link rel="prefetch" href="/assets/js/19.d75fe034.js"><link rel="prefetch" href="/assets/js/20.de826cc0.js"><link rel="prefetch" href="/assets/js/21.cd37cfee.js"><link rel="prefetch" href="/assets/js/22.d56405b3.js"><link rel="prefetch" href="/assets/js/23.30a66110.js"><link rel="prefetch" href="/assets/js/3.55360ebd.js"><link rel="prefetch" href="/assets/js/4.a330123a.js"><link rel="prefetch" href="/assets/js/5.1b334eb2.js"><link rel="prefetch" href="/assets/js/6.4dc97df2.js"><link rel="prefetch" href="/assets/js/7.11213fd6.js"><link rel="prefetch" href="/assets/js/8.31b1ce82.js"><link rel="prefetch" href="/assets/js/9.555a3338.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">李飒飒</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="guide Menu" class="dropdown-title"><span class="title">指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="guide Menu" class="mobile-dropdown-title"><span class="title">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/vuepress/" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/guide/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/guide/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/guide/mysql/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/guide/tomcat/" class="nav-link">
+  Tomcat
+</a></li><li class="dropdown-item"><!----> <a href="/guide/mybatis/" class="nav-link">
+  MyBatis
+</a></li><li class="dropdown-item"><!----> <a href="/guide/java/" class="nav-link router-link-active">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/guide/redis/" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="project Menu" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="project Menu" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/exam/" class="nav-link">
+  考试系统
+</a></li><li class="dropdown-item"><!----> <a href="/project/work/" class="nav-link">
+  办公系统
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="guide Menu" class="dropdown-title"><span class="title">指南</span> <span class="arrow down"></span></button> <button type="button" aria-label="guide Menu" class="mobile-dropdown-title"><span class="title">指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/vuepress/" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/guide/nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/guide/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/guide/mysql/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/guide/tomcat/" class="nav-link">
+  Tomcat
+</a></li><li class="dropdown-item"><!----> <a href="/guide/mybatis/" class="nav-link">
+  MyBatis
+</a></li><li class="dropdown-item"><!----> <a href="/guide/java/" class="nav-link router-link-active">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/guide/redis/" class="nav-link">
+  Redis
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="project Menu" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="project Menu" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/exam/" class="nav-link">
+  考试系统
+</a></li><li class="dropdown-item"><!----> <a href="/project/work/" class="nav-link">
+  办公系统
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Hutool 工具包使用指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/java/hutool/#hutool-工具包使用指南" class="sidebar-link">Hutool 工具包使用指南</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/guide/java/hutool/#_1-添加依赖" class="sidebar-link">1. 添加依赖</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/guide/java/hutool/#_2-md5-加密算法" class="sidebar-link">2. md5 加密算法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/guide/java/hutool/#_3-使用代理发送请求-json格式数据" class="sidebar-link">3. 使用代理发送请求（json格式数据）</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/guide/java/hutool/#_4-不是用代理发送请求-json格式数据" class="sidebar-link">4. 不是用代理发送请求（json格式数据）</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="hutool-工具包使用指南"><a href="#hutool-工具包使用指南" class="header-anchor">#</a> Hutool 工具包使用指南</h2> <h2 id="_1-添加依赖"><a href="#_1-添加依赖" class="header-anchor">#</a> 1. 添加依赖</h2> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>cn.hutool<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>hutool-all<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>5.8.7<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="_2-md5-加密算法"><a href="#_2-md5-加密算法" class="header-anchor">#</a> 2. md5 加密算法</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">String</span> md5 <span class="token operator">=</span> <span class="token class-name">SecureUtil</span><span class="token punctuation">.</span><span class="token function">md5</span><span class="token punctuation">(</span><span class="token string">&quot;1234&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_3-使用代理发送请求-json格式数据"><a href="#_3-使用代理发送请求-json格式数据" class="header-anchor">#</a> 3. 使用代理发送请求（json格式数据）</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">String</span> paramJson <span class="token operator">=</span> <span class="token string">&quot;{\&quot;key1\&quot;:\&quot;&quot;</span><span class="token operator">+</span>value1<span class="token operator">+</span><span class="token string">&quot;\&quot;,\&quot;key2\&quot;:\&quot;&quot;</span><span class="token operator">+</span>value2<span class="token operator">+</span><span class="token string">&quot;\&quot;,\&quot;key3\&quot;:&quot;</span><span class="token operator">+</span>value3<span class="token operator">+</span><span class="token string">&quot;}&quot;</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> result2 <span class="token operator">=</span> <span class="token class-name">HttpRequest</span><span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setHttpProxy</span><span class="token punctuation">(</span><span class="token string">&quot;10.12.2.22&quot;</span><span class="token punctuation">,</span><span class="token number">8080</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;header1&quot;</span><span class="token punctuation">,</span> value1<span class="token punctuation">)</span><span class="token comment">//头信息，多个头信息多次调用此方法即可</span>
+                    <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;header2&quot;</span><span class="token punctuation">,</span> value2<span class="token punctuation">)</span><span class="token comment">//头信息，多个头信息多次调用此方法即可</span>
+                    <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;header3&quot;</span><span class="token punctuation">,</span> value3<span class="token punctuation">)</span><span class="token comment">//头信息，多个头信息多次调用此方法即可</span>
+                    <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;header4&quot;</span><span class="token punctuation">,</span> value4<span class="token punctuation">)</span><span class="token comment">//头信息，多个头信息多次调用此方法即可</span>
+                    <span class="token punctuation">.</span><span class="token function">body</span><span class="token punctuation">(</span>paramJson<span class="token punctuation">,</span><span class="token string">&quot;application/json&quot;</span><span class="token punctuation">)</span><span class="token comment">//表单内容</span>
+<span class="token comment">//                .timeout(20000)//超时，毫秒</span>
+                    <span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_4-不是用代理发送请求-json格式数据"><a href="#_4-不是用代理发送请求-json格式数据" class="header-anchor">#</a> 4. 不是用代理发送请求（json格式数据）</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">String</span> paramJson <span class="token operator">=</span> <span class="token string">&quot;{\&quot;key1\&quot;:\&quot;&quot;</span><span class="token operator">+</span>value1<span class="token operator">+</span><span class="token string">&quot;\&quot;,\&quot;key2\&quot;:\&quot;&quot;</span><span class="token operator">+</span>value2<span class="token operator">+</span><span class="token string">&quot;\&quot;,\&quot;key3\&quot;:&quot;</span><span class="token operator">+</span>value3<span class="token operator">+</span><span class="token string">&quot;}&quot;</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> result2 <span class="token operator">=</span> <span class="token class-name">HttpRequest</span><span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;header1&quot;</span><span class="token punctuation">,</span> value1<span class="token punctuation">)</span><span class="token comment">//头信息，多个头信息多次调用此方法即可</span>
+                    <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;header2&quot;</span><span class="token punctuation">,</span> value2<span class="token punctuation">)</span><span class="token comment">//头信息，多个头信息多次调用此方法即可</span>
+                    <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;header3&quot;</span><span class="token punctuation">,</span> value3<span class="token punctuation">)</span><span class="token comment">//头信息，多个头信息多次调用此方法即可</span>
+                    <span class="token punctuation">.</span><span class="token function">header</span><span class="token punctuation">(</span><span class="token string">&quot;header4&quot;</span><span class="token punctuation">,</span> value4<span class="token punctuation">)</span><span class="token comment">//头信息，多个头信息多次调用此方法即可</span>
+                    <span class="token punctuation">.</span><span class="token function">body</span><span class="token punctuation">(</span>paramJson<span class="token punctuation">,</span><span class="token string">&quot;application/json&quot;</span><span class="token punctuation">)</span><span class="token comment">//表单内容</span>
+<span class="token comment">//                .timeout(20000)//超时，毫秒</span>
+                    <span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.334c6177.js" defer></script><script src="/assets/js/2.9c506eb8.js" defer></script><script src="/assets/js/12.99d6708b.js" defer></script>
+  </body>
+</html>
